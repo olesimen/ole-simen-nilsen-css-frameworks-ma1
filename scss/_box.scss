@@ -1,0 +1,27 @@
+.embed-responsive-4by3 {
+    padding: 1rem;
+
+    &::before {
+        padding-top: 100%;
+    }
+}
+
+.box {
+    padding: 1.5rem;
+
+    &__inner {
+        padding: none;
+        background-color: var(--primary);
+        border: 3px solid transparent;
+
+        &--rb-wbg {
+            border-color: var(--pink);
+            background-color: var(--white);
+        }
+
+        &--wb-rbg {
+            border-color: var(--white);
+            background-color: var(--pink);
+        }
+    }
+}
