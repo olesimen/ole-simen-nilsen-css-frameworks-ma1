@@ -1,4 +1,39 @@
+:root {
+  --bg-color: #e5e5e5;
+  --primary: #f4f3ee;
+  --white: #ffffff;
+  --pink: #c32c72;
+}
+
 body {
-  background-color: red;
+  background-color: var(--bg-color);
+}
+
+.embed-responsive-4by3 {
+  padding: 1rem;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 100%;
+}
+
+.box {
+  padding: 1.5rem;
+}
+
+.box__inner {
+  padding: none;
+  background-color: var(--primary);
+  border: 3px solid transparent;
+}
+
+.box__inner--rb-wbg {
+  border-color: var(--pink);
+  background-color: var(--white);
+}
+
+.box__inner--wb-rbg {
+  border-color: var(--white);
+  background-color: var(--pink);
 }
 /*# sourceMappingURL=style.css.map */
